@@ -403,7 +403,7 @@ if ( ! class_exists( 'Filterable_Portfolio_Setting_API' ) ) {
 			}
 
 			$table .= "</table>";
-			echo wp_kses_post( $table );
+			echo $table;
 		}
 
 		/**
