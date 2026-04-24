@@ -1,10 +1,10 @@
 === Filterable Portfolio ===
-Contributors: sayful, majeedraza
+Contributors: sayful
 Tags: portfolio, portfolio gallery, portfolio plugin, sortable portfolio, project showcase
 Requires at least: 6.0
 Requires PHP: 7.0
-Tested up to: 6.8
-Stable tag: 1.6.5
+Tested up to: 7.0
+Stable tag: 1.6.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -103,6 +103,11 @@ Here is a list of all default meta fields: _project_images, _client_name, _proje
 6. Filterable Portfolio edit page.
 
 == Changelog ==
+
+= version 1.6.6 - 2026-04-24 =
+* Check compatibility with WordPress 7.0
+* Fix setting options are not saving.
+
 
 = version 1.6.5 - 2025-04-15 =
 * Dev       - Check compatibility with WordPress 6.8

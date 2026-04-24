@@ -1,18 +1,18 @@
 <?php
 /**
- * Plugin Name:         Filterable Portfolio
- * Plugin URI:          https://majeedraza.me/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
- * Description:         A WordPress plugin to display portfolio images with filtering.
- * Version:             1.6.5
- * Author:              Majeed Raza
- * Author URI:          https://majeedraza.me/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
- * License:             GPLv3
- * License URI:         https://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain:         filterable-portfolio
- * Domain Path:         /languages
- * Requires at least:   6.0
- * Tested up to:        6.8
- * Requires PHP:        7.0
+ * Plugin Name: Filterable Portfolio
+ * Plugin URI: https://github.com/sayful1/filterable-portfolio
+ * Description: A WordPress plugin to display portfolio images with filtering.
+ * Version: 1.6.6
+ * Author: Majeed Raza
+ * Author URI: https://github.com/sayful1/
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain: filterable-portfolio
+ * Domain Path: /languages
+ * Requires at least: 6.0
+ * Tested up to: 7.0
+ * Requires PHP: 7.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -46,7 +46,7 @@ if ( ! class_exists( 'Filterable_Portfolio' ) ) {
 		 *
 		 * @var string
 		 */
-		private $version = '1.6.5';
+		private $version = '1.6.6';
 
 		/**
 		 * Instance of this class
