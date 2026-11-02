@@ -101,7 +101,48 @@ if ( ! class_exists( 'Filterable_Portfolio_MetaBox_API' ) ) {
 			}
 
 			$table .= "</table>";
-			echo wp_kses_post( $table );
+			$allowed_html = wp_kses_allowed_html( 'post' );
+
+$allowed_html['input'] = array(
+    'type'    => true,
+    'id'      => true,
+    'name'    => true,
+    'value'   => true,
+    'class'   => true,
+    'checked' => true,
+);
+
+$allowed_html['select'] = array(
+    'id'   => true,
+    'name' => true,
+);
+
+$allowed_html['option'] = array(
+    'value'    => true,
+    'selected' => true,
+);
+
+$allowed_html['textarea'] = array(
+    'id'    => true,
+    'name'  => true,
+    'rows'  => true,
+    'cols'  => true,
+);
+
+$allowed_html['input']['data-default-color'] = true;
+
+$allowed_html['button'] = array(
+    'id'            => true,
+    'class'         => true,
+    'type'          => true,
+    'data-modal'    => true,
+    'data-create'   => true,
+    'data-edit'     => true,
+    'data-progress' => true,
+    'data-save'     => true,
+);
+
+echo wp_kses( $table, $allowed_html );
 		}
 
 		/**
